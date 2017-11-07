@@ -26,12 +26,12 @@ footskip=5mm]{geometry}
 \begin{document}
 
 
-\title{Caracterização Automática de Notícias no Contexto do Mercado de Ações Brasileiro\\ \smallskip
+\title{O modelo Spotify: uma análise exploratória sobre a adaptabilidade dos métodos ágeis em grandes empresas\\ \smallskip
 \small{ PROPOSTA DE TRABALHO}}
 
-\author{ \bf Fulano Beltrano da Silva\\
-		\tt fbeltrano@email.edu \\
-		Curso de Sistemas de Informação \\
+\author{ \bf Alécio Dalprá\\
+		\tt aleciodalpra@gmail.com \\
+		Curso de Especialização em Tecnologias Aplicadas a Sistemas de Informação com Métodos Ágeis \\
 		Centro Universitário Ritter Dos Reis - UNIRITTER 
 }
 
@@ -43,52 +43,49 @@ footskip=5mm]{geometry}
 
 \section{Relevância do trabalho} \label{sec:intro}
 
-Muitos investidores atuam no mercado de ações com o objetivo de realizar investimentos rentáveis e uma previsão confiável do comportamento do mercado pode ser útil neste contexto \cite{twitter:stock}. Contudo, esta não é uma tarefa fácil e ainda não há um método amplamente aceito para prever o movimento dos preços das ações~\cite{Schumaker:2010}. Os desafios envolvem a compreensão da dinâmica do mercado, onde parâmetros mudam constantemente e muitas vezes se quer estão (são) bem definidos(conhecidos). Por esta razão, a análise do mercado de ações tem atraído o interesse da comunidade científica.
+O Spotify \footnote{{https://www.spotify.com/br/}}, empresa sueca de streaming de música, é sem sombra de dúvidas, uma empresa de sucesso, está na moda e entre as startups mais invejadas do mercado, não restrito apenas ao mercado musical. Seu negócio está embasado e depende totalmente de TI (Tecnologia da Informação).
 
-A \textit{análise técnica} e a \textit{análise fundamentalista} \cite{deschatre2006aprenda} são duas das principais vertentes no contexto de prever o comportamento do mercado financeiro. Basicamente, a análise técnica emprega dados históricos de preços no processo de prever o comportamento futuro destes preços, enquanto que a análise fundamentalista baseia-se em fatores econômicos que afetam o ramo de atividade das empresas, como indicadores econômicos e quebras de produção. Neste contexto, eventos/notícias podem ter grande impacto no comportamento dos preços das ações no mercado e, por esta razão, um dos pré-requisitos de um analista de mercado é estar a par de notícias associadas a ramos de atividades de uma carteira de investimentos.
+Nos dias de hoje são raras as empresas que podem prescindir da TI e continuar sendo competitivas no seu ramo de atuação. Essa necessidade faz com que as empresas optem por diferentes formas de gerenciamento de seus projetos, desde simples processos ad-hoc a controles complexos, como um diagrama de Gantt \cite{Lourenco:Dissertacao}.
 
-Com base no grande e crescente volume de informações que são gerados diariamente nos canais de notícias, se torna impraticável para um analista monitorar uma grande quantidade de eventos relativos ao mercado de capitais, sobretudo quando este processo deve ocorrer na velocidade das oscilações de preços dos ativos financeiros. Assim, para embasar a tomada de decisão sobre títulos transacionados em bolsa de valores, se torna útil o processamento computacional prévio destas informações de forma a entregar para o profissional especialista somente as informações relevantes ao contexto de interesse. Neste sentido, técnicas de mineração de dados textuais têm mostrado resultados relevantes na tarefa de automatizar a análise de notícias \footnote{\url{http://www.thestocksonar.com/}} e seu impacto em mercados internacionais \cite{Schumaker:2010,Mahajan:2008}.
+O sucesso do Spotify e a constante ascensão do desenvolvimento de software baseado em princípios ágeis publicados no Manifesto Ágil \footnote{http://agilemanifesto.org/} ainda em 2001, fez com que muitas empresas literalmente se jogassem nesse modelo de trabalho esperando que todos os seus problemas fossem resolvidos de uma forma mágica a partir da simples adoção de um kit de práticas dos modelos ágeis mais conhecidos, como Lean Development \cite{MaryTomPoppendieck}, Scrum \cite{Schwaber}, Extreme Programing (XP) \cite{BeckFowler}, Kanban \cite{Rasmusson}. É o sonho de se tornar o Spotify do dia pra noite.
 
-No contexto discutido acima são raros os trabalhos que envolvem o mercado nacional e sua suscetibilidade à notícias/eventos. Quando o foco é o mercado de ações brasileiro, a literatura apresenta métodos que exploram o histórico de preços das ações do ponto de vista de técnicas de análise de séries temporais~\cite{Edgard:Dissertacao}, porém não verificou-se trabalhos que visam automatizar a busca por padrões de conteúdo em notícias (texto) como forma de entender o comportamento do mercado de ações.
+As empresas, no entanto, estão inseridas em contextos distintos. Seja um contexto de negócio como um mercado específico ou, para aquelas que estão no mesmo setor, há questões organizacionais próprias, tais como a hierarquia, tamanho da empresa, tempo no mercado, particularidades de produtos e clientes, arquitetura tecnológica, dentre outras. O modelo Spotify também possui suas particularidades de acordo com as necessidades e contexto do próprio Spotify. Algumas consultorias e consultores independentes têm oferecido serviços e treinamentos com discursos de maior lucratividade e resposta ao mercado se adotarem o método ágil A ou B (dentre eles o modelo Spotify) sem considerar os detalhes do contexto. Em muitos casos a iniciativa falha e a culpa é atribuída ao método.
+
+Atualmente, encontra-se na bibliografia trabalhos que relatam a adoção de métodos ágeis por algumas empresas como \cite{EstudoCasoSERPRO}, \cite{MitigacaoDificuldadesSERPRO},  \cite{melo2010adoccao}, \cite{mauricio2016utilizaccao}. No entanto, estes textos abordam um método ou situações específicas das empresas analisadas. Nenhum dos textos cita a adoção do modelo Spotify. Os que mencionam o Spotify referem-se a aspectos específicos da plataforma ou dos usuários, como: \cite{kreitz2010spotify}, \cite{zhang2013understanding}, \cite{goldmann2011measurements}.
+
+A partir desta análise, observa-se uma carência de trabalhos exploratórios apresentando a viabilidade para adoção do modelo Spotify bem como resultados obtidos a partir da implantação das respectivas técnicas de trabalho em diferentes contextos.
+
 
 \section{Objetivos}\label{sec:objetivos}
 
 \subsection{Objetivo geral}
 
-Este trabalho propõe um estudo sobre as potencialidades de métodos clássicos de mineração de texto focado na caracterização automática do conteúdo de notícias que impactam no mercado de ações brasileiro.
+Realizar uma análise exploratória sobre o modelo Spotify de trabalho e a adoção deste modelo por empresas de diferentes setores.
 
 \subsection{Objetivos específicos}
 
-A abordagem testada neste trabalho visa avaliar o desempenho de uma abordagem \textit{bag-of-words} \cite{Manning:IR} para propósitos de descoberta de padrões noticiosos e seus reflexos no mercado de ações brasileiro. Com isso busca-se avaliar as potencialidades de uma abordagem clássica e difundida para o problema de mineração de textos, para então, em um trabalho futuro, implementar a classificação de notícias em conjunto com técnicas de seleção de feições mais elaboradas, como aquelas baseadas em extração de tópicos~\cite{Mahajan:2008}. Deste modo, entre os objetivos específicos deste trabalho pode-se destacar:
-
 \begin{itemize}
-  \item Avaliar a existência de padrões em notícias que versam sobre o mercado financeiro brasileiro em contextos de alta e baixa de preços.
-  \item Investigar a influência de falsos positivos em dados de treinamento para a classificação supervisionada, uma vez que assume-se que todas as notícias que ocorrem em janelas temporais caracterizadas pela queda de preços são, de fato, notícias que levam a queda destes e vice-versa.
-  \item Prover um estudo inicial sobre a bolsa brasileira no sentido de responder, de forma automatizada, perguntas como \textit{"O quão similar as notícias de hoje são em relação àquelas do passado?"}, provendo suporte a decisão para analistas que buscam medir o impacto de determinados eventos sobre um conjunto de ações.
+  \item Analisar o contexto do Spotify e necessidades que levaram a empresa a construir o referido modelo;
+  \item Identificar os processos, atividades e estrutura e modelo de organização proposto;
+  \item Avaliar a aplicabilidade e não aplicabilidade do modelo Spotify em outros contextos e empresas;
 \end{itemize}
 
-\section{Solução proposta}
-Este trabalho visa avaliar o desempenho de uma abordagem bag-of-words \cite{Manning:IR} para propósitos de descoberta de padrões noticiosos
-e seus reflexos no mercado de ações brasileiro. Especificamente, busca-se avaliar as potencialidades de uma abordagem
-clássica e difundida de mineração de textos para a caracterização/classificação de textos noticiosos em contextos de alta e baixa de
-preços no mercado de ações brasileiro. Neste sentido, avalia-se as potencialidades da abordagem proposta para realizar previsões
-de curto e médio prazo sobre o comportamento do mercado acionário brasileiro.
+\section{Solução proposta	}
 
-Os experimentos serão conduzidos sobre uma base textual histórica que contém mais de 5000 notícias sobre o mercado do
-petróleo e de ações no Brasil. Os textos provêm das principais fontes de notícias brasileiras que publicam o seu conteúdo na
-internet, como Boletim Reuters, Correio Braziliense, Isto é Dinheiro, O Estado de SP, O Globo, Folha de SP e Valor Econômico.
-As cotações dos ativos serão obtidas do site da Bovespa, que mantém para consulta pública até dez anos de valores de abertura e
-fechamento de todos os papéis negociados pela entidade.
+Este trabalho visa avaliar o contexto de trabalho do Spotify e as necessidades que o levaram a adotar determinadas práticas no dia a dia e a desenvolver um modelo de trabalho que proporcionou uma melhor resposta aos desafios impostos pelo mercado, bem como analisar se o modelo possui alguma limitação e oportunidade de melhoria na visão da própria empresa.
+
+Também é propósito identificar, no que foi proposto e desenvolvido pelo Spotify, padrões que podem ser adotados por outras empresas de diferentes setores do mercado. Tão importante quanto identificar o que se aplica também é o desafio de identificar o que não se aplica e a elaboração de alternativas para um processo de transformação ágil conforme o contexto onde a empresa está inserida.
+
+As análises serão realizadas a partir de materiais publicados pelo Spotify e disponíveis na internet, bem como o contexto de empresas brasileiras para comparação da aplicabilidade do modelo.
 
 \section{Cronograma de desenvolvimento}\label{sec:cronograma}
 
 A Tabela \ref{tab:cronograma} apresenta o cronograma de desenvolvimento do trabalho conforme a numeração das atividades abaixo:
 \begin{enumerate}
-	\item Levantamento de dados históricos (documentos e cotações);
-	\item Pré-processamento dos dados históricos;
-	\item Estudo sobre as principais técnicas de mineração de textos;  
-	\item Levantamento sobre abordagens de mineração de textos voltadas ao mercado de ações;
-	\item Testes preliminares com bibliotecas de mineração de dados;
+	\item Investigação e identificação do histórico do Spotify	e coleta de dados sobre processos e organização estrutural da empresa;
+	\item Estudo sobre as técnicas utilizadas e seus respectivos contextos; 
+	\item Seleção de algumas empresas brasileiras para amostra de comparação;
+	\item Avaliação da aplicabilidade do modelo do Spotify nas respectivas empresas;
 	\item Elaboração do artigo;
 	\item Apresentação do trabalho.
 \end{enumerate}
@@ -98,14 +95,13 @@ A Tabela \ref{tab:cronograma} apresenta o cronograma de desenvolvimento do traba
 	\caption{Cronograma de atividades. \label{tab:cronograma}}
 		\begin{tabular}{|c|c|c|c|c|c|c|}
 			\hline			
-			 \bf Atividade & \bf 7/16 & \bf 8/16 & \bf 9/16 & \bf 10/16 & \bf 11/16 & \bf 12/16  \\	\hline \hline
+			 \bf Atividade & \bf 2/18 & \bf 3/18 & \bf 4/18 & \bf 5/18 & \bf 6/18 & \bf 8/18  \\	\hline \hline
 					 1 & x & x &   &   &   &   \\ \hline
 					 2 &   & x & x & x &   &   \\ \hline
 					 3 & x & x & x &   &   &   \\ \hline
 					 4 & x & x & x & x &   &   \\ \hline
 					 5 &   &   &   & x & x &   \\ \hline
 					 6 &   &   & x & x & x &   \\ \hline
-					 7 &   &   &   &   &   & x \\ \hline
 		\end{tabular}
 		\end{center}		
 \end{table}
